@@ -55,6 +55,14 @@ public class MethodSignature {
             this.name = name;
         }
 
+        @Override
+        public String toString() {
+            return "Argument{" +
+                    "type='" + type + '\'' +
+                    ", name='" + name + '\'' +
+                    '}';
+        }
+
         public String getType() {
             return type;
         }
@@ -70,5 +78,15 @@ public class MethodSignature {
         public void setName(String name) {
             this.name = name;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "MethodSignature{" +
+                "accessModifier='" + accessModifier + '\'' +
+                ", returnType='" + returnType + '\'' +
+                ", methodName='" + methodName + '\'' +
+                ", arguments=" + arguments +
+                '}';
     }
 }
